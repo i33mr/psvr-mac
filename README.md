@@ -1,7 +1,7 @@
 # psvr-mac
 
 Use a PlayStation VR (v1, CUH-ZVR1/ZVR2) as a VR video headset on an Apple Silicon Mac.
-No PS4, no Rosetta, and nothing to install beyond Xcode's command-line tools.
+No PS4 and no Rosetta: [download the app](#download) or [build it](#build).
 
 - **PSVR Player.app**: the Mac app. Library of your VR videos, open files, paste YouTube links, share any
   window or screen onto a virtual screen, calibration grid.
@@ -22,9 +22,22 @@ I had a PlayStation VR lying around after I stopped using my PS4, and wanted a s
 use. It turned out to make a pretty good VR video headset for a Mac, so here it is, in case yours is gathering
 dust too.
 
+## Download
+
+From the [latest release](https://github.com/i33mr/psvr-mac/releases/latest):
+
+- **PSVR-Player-<version>.zip**: the app. Unzip it and move **PSVR Player** to Applications.
+- **psvr-tools-<version>.zip** (optional): the terminal tools `psvrplayer` and `psvrctl`.
+
+The app isn't notarized by Apple (that needs a paid developer account), so macOS blocks it the first time. Open it
+once, then go to **System Settings → Privacy & Security** and click **Open Anyway**. For the terminal tools, run
+`xattr -d com.apple.quarantine psvrplayer psvrctl` in the folder you unzipped them to.
+
+Or build it yourself (below); then none of this applies.
+
 ## Requirements
 
-- An Apple Silicon Mac (M1 or later) with macOS 14 or later, and Xcode's command-line tools to build.
+- An Apple Silicon Mac (M1 or later) with macOS 14 or later. To build from source: Xcode's command-line tools.
 - A PlayStation VR v1 (CUH-ZVR1 or CUH-ZVR2) with its processor unit, HDMI cable and a micro-USB data cable.
 - For video links only: `brew install yt-dlp ffmpeg node` (Node.js helps with YouTube's checks).
 
@@ -317,7 +330,8 @@ and a virtual screen for any Mac window.
 
 Bug reports are most useful with your Mac model, macOS version, headset model (CUH-ZVR1 or ZVR2) and the output of
 `bin/psvrctl info` and `bin/psvrctl display status`; the issue form asks for these. Pull requests: run `swift test`
-first.
+first. Releases are built with `scripts/make-release.sh <version>`, which also checks that no local paths end up in
+the downloads.
 
 ## Disclaimer
 

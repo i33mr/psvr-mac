@@ -1,16 +1,22 @@
 #!/bin/bash
 # Builds "PSVR Player.app" and installs it (default: /Applications).
-# Usage: scripts/build-app.sh [install folder]
+# Usage: scripts/build-app.sh [install folder]     ("-" builds build/PSVR Player.app without installing)
+# SWIFT_BUILD_ARGS adds swift build options (scripts/make-release.sh uses it).
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
 INSTALL_DIR="${1:-/Applications}"
 APP="build/PSVR Player.app"
+read -r -a EXTRA <<< "${SWIFT_BUILD_ARGS:-}"
+BUILD=(swift build -c release ${EXTRA[@]+"${EXTRA[@]}"})
 
-swift build -c release --product PSVRPlayerApp
+"${BUILD[@]}" --product PSVRPlayerApp
+BIN="$("${BUILD[@]}" --show-bin-path)"
 rm -rf "$APP"
 mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
-cp .build/release/PSVRPlayerApp "$APP/Contents/MacOS/PSVR Player"
+cp "$BIN/PSVRPlayerApp" "$APP/Contents/MacOS/PSVR Player"
+# Drop the debug map (it lists build-folder paths); release builds don't need it.
+strip -S "$APP/Contents/MacOS/PSVR Player"
 
 # Icon
 ICONSET="build/AppIcon.iconset"
@@ -59,6 +65,10 @@ PLIST
 # Local (ad-hoc) signature so macOS treats it as one consistent app.
 codesign --force --deep --sign - "$APP"
 
+if [ "$INSTALL_DIR" = "-" ]; then
+    echo "built: $APP"
+    exit 0
+fi
 mkdir -p "$INSTALL_DIR"
 rm -rf "$INSTALL_DIR/PSVR Player.app"
 cp -R "$APP" "$INSTALL_DIR/"
