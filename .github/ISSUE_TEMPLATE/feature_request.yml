@@ -1,0 +1,11 @@
+name: Feature request
+description: An idea for the player, the app or the headset tools
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+      description: What you'd like to do, and how you do it today (if at all). The README's Roadmap lists ideas already planned.
+    validations:
+      required: true

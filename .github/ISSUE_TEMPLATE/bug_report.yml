@@ -1,0 +1,50 @@
+name: Bug report
+description: Something doesn't work with your Mac or headset
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: input
+    id: mac
+    attributes:
+      label: Mac model and chip
+      placeholder: e.g. MacBook Pro 16" 2023, M2 Pro
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: e.g. macOS 15.2
+    validations:
+      required: true
+  - type: dropdown
+    id: headset
+    attributes:
+      label: Headset model
+      description: On the box, or on the headset's label.
+      options:
+        - CUH-ZVR1
+        - CUH-ZVR2
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      options:
+        - The app (PSVR Player)
+        - The terminal player (psvrplayer)
+        - psvrctl
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: The output of `bin/psvrctl info` and `bin/psvrctl display status`, and any messages the player printed.
+      render: text

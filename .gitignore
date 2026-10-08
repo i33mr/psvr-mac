@@ -1,0 +1,5 @@
+.build/
+bin/
+releases/
+.DS_Store
+build/
