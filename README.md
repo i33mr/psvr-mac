@@ -14,6 +14,11 @@ headset lights off, and a choice of sound device.
 Plays 360°, 180° and flat videos (mono, side-by-side or top-bottom 3D) with head tracking and PSVR lens and
 colour correction, YouTube VR180/360° links, and a head-tracked virtual screen for any Mac window.
 
+![Looking around a 360° video in the headset](docs/images/demo.webp)
+
+<sub>Looking around a 360° video in the headset (left eye, recorded with *Preview on this Mac*). Video: NASA
+Goddard, [Fly Above Alaskan Glaciers in 360](https://svs.gsfc.nasa.gov/13711) (public domain).</sub>
+
 ![PSVR Player: a library of VR videos in categories, with type filters](docs/images/app.png)
 
 ## Why
