@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 410" width="960" height="410" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-label="Wiring: Mac HDMI to the processor unit HDMI PS4 port, Mac USB to its micro-USB port, AC adapter to DC IN, headset to the front; HDMI TV stays empty">
+<rect x="0.5" y="0.5" width="959" height="409" rx="12" fill="#161b22" stroke="#30363d"/>
+<rect x="40" y="120" width="170" height="110" rx="8" fill="#21262d" stroke="#6e7681" stroke-width="2"/>
+<rect x="52" y="132" width="146" height="86" rx="3" fill="#0d1117" stroke="#6e7681"/>
+<path d="M24 232 h202 l-14 16 h-174 z" fill="#21262d" stroke="#6e7681" stroke-width="2" stroke-linejoin="round"/>
+<text x="125" y="172" font-size="18" font-weight="600" fill="#e6edf3" text-anchor="middle">Mac</text>
+<text x="125" y="194" font-size="13" font-weight="400" fill="#9198a1" text-anchor="middle">Apple Silicon</text>
+<rect x="400" y="70" width="230" height="250" rx="14" fill="#21262d" stroke="#6e7681" stroke-width="2"/>
+<text x="515.0" y="40" font-size="16" font-weight="600" fill="#e6edf3" text-anchor="middle">PSVR processor unit</text>
+<text x="418" y="96" font-size="11" font-weight="600" fill="#9198a1" text-anchor="start">BACK</text>
+<text x="612" y="96" font-size="11" font-weight="600" fill="#9198a1" text-anchor="end">FRONT</text>
+<line x1="560" y1="82" x2="560" y2="308" stroke="#6e7681" stroke-dasharray="4 4"/>
+<rect x="418" y="118" width="18" height="24" rx="3" fill="#0d1117" stroke="#4493f8" stroke-width="2"/>
+<text x="446" y="135" font-size="14" font-weight="500" fill="#e6edf3" text-anchor="start">HDMI PS4</text>
+<rect x="418" y="158" width="18" height="24" rx="3" fill="#0d1117" stroke="#6e7681" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="446" y="175" font-size="14" font-weight="400" fill="#9198a1" text-anchor="start">HDMI TV</text>
+<rect x="418" y="198" width="18" height="24" rx="3" fill="#0d1117" stroke="#3fb950" stroke-width="2"/>
+<text x="446" y="215" font-size="14" font-weight="500" fill="#e6edf3" text-anchor="start">micro-USB</text>
+<rect x="418" y="258" width="18" height="24" rx="3" fill="#0d1117" stroke="#f0883e" stroke-width="2"/>
+<text x="446" y="275" font-size="14" font-weight="500" fill="#e6edf3" text-anchor="start">DC IN</text>
+<text x="446" y="187" font-size="11" font-weight="400" fill="#9198a1" text-anchor="start">leave empty</text>
+<path d="M210 160 C 300 160, 330 130, 418 130" fill="none" stroke="#4493f8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="305" y="104" font-size="13" font-weight="600" fill="#4493f8" text-anchor="middle">HDMI</text>
+<text x="305" y="120" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">or a USB-C → HDMI adapter</text>
+<path d="M210 200 C 300 200, 330 210, 418 210" fill="none" stroke="#3fb950" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="300" y="236" font-size="13" font-weight="600" fill="#3fb950" text-anchor="middle">USB data cable</text>
+<text x="300" y="252" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">USB-C → micro-USB</text>
+<rect x="250" y="320" width="80" height="44" rx="8" fill="#21262d" stroke="#6e7681" stroke-width="2"/>
+<text x="290" y="347" font-size="12" font-weight="400" fill="#e6edf3" text-anchor="middle">AC adapter</text>
+<path d="M330 342 C 370 342, 370 270, 418 270" fill="none" stroke="#f0883e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="0" y="0" font-size="13" font-weight="600" fill="#f0883e" text-anchor="middle"></text>
+<text x="290" y="382" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">the PSVR's own power supply</text>
+<rect x="585" y="188" width="18" height="24" rx="3" fill="#0d1117" stroke="#ab7df8" stroke-width="2"/>
+<text x="594" y="236" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">headset</text>
+<text x="594" y="250" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">port</text>
+<path d="M755 178 q0 -32 30 -32 h90 q30 0 30 32 v26 q0 30 -30 30 h-24 q-12 0 -18 -12 l-6 -10 q-3 -5 -9 -5 q-6 0 -9 5 l-6 10 q-6 12 -18 12 h-0 q-30 0 -30 -30 z" fill="#21262d" stroke="#6e7681" stroke-width="2" stroke-linejoin="round"/>
+<path d="M750 170 q75 -55 160 0" fill="none" stroke="#6e7681" stroke-width="6" stroke-linecap="round"/>
+<text x="830" y="262" font-size="16" font-weight="600" fill="#e6edf3" text-anchor="middle">PSVR headset</text>
+<text x="830" y="280" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">remote on its cable: power, mic-mute, vol ±</text>
+<path d="M603 200 C 680 200, 670 204, 755 204" fill="none" stroke="#ab7df8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="680" y="168" font-size="13" font-weight="600" fill="#ab7df8" text-anchor="middle">headset cable</text>
+<text x="680" y="184" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">as with the PS4</text>
+</svg>

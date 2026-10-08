@@ -16,6 +16,12 @@ colour correction, YouTube VR180/360° links, and a head-tracked virtual screen 
 
 ![PSVR Player: a library of VR videos in categories, with type filters](docs/images/app.png)
 
+## Why
+
+I had a PlayStation VR lying around after I stopped using my PS4, and wanted a small, fun project to put it to
+use. It turned out to make a pretty good VR video headset for a Mac, so here it is, in case yours is gathering
+dust too.
+
 ## Requirements
 
 - An Apple Silicon Mac (M1 or later) with macOS 14 or later, and Xcode's command-line tools to build.
@@ -26,15 +32,10 @@ Tested on a 16" MacBook Pro (M2 Pro) with macOS 27 and a CUH-ZVR2. Reports from 
 
 ## Wiring
 
-```
-                         ┌──────────────── PSVR processor unit ────────────────┐
-MacBook HDMI port ──────►│ HDMI "PS4" (back)                                   │
-MacBook USB-C ── USB-C→micro-USB ──►│ micro-USB (back)                          │
-PSVR AC adapter ────────►│ DC IN (back)                                         │
-                         │ HDMI "TV" (back): leave empty                         │
-                         │ front: headset cable (as with the PS4)               │
-                         └──────────────────────────────────────────────────────┘
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/wiring-dark.svg">
+  <img src="docs/images/wiring-light.svg" alt="Wiring: the Mac's HDMI goes to the processor unit's HDMI PS4 port, a USB data cable from the Mac to its micro-USB port, the PSVR's AC adapter to DC IN, and the headset to the front. HDMI TV stays empty.">
+</picture>
 
 The USB cable must carry data (not a charge-only cable). It's how the Mac sends commands and reads head tracking.
 
