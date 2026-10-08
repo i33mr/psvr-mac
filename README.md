@@ -41,7 +41,14 @@ Or build it yourself (below); then none of this applies.
 - A PlayStation VR v1 (CUH-ZVR1 or CUH-ZVR2) with its processor unit, HDMI cable and a micro-USB data cable.
 - For video links only: `brew install yt-dlp ffmpeg node` (Node.js helps with YouTube's checks).
 
-Tested on a 16" MacBook Pro (M2 Pro) with macOS 27 and a CUH-ZVR2. Reports from other Macs and headsets are welcome.
+### Compatibility
+
+| Mac | macOS | Headset | Result |
+|---|---|---|---|
+| MacBook Pro 16" (M2 Pro) | 27 | CUH-ZVR2 | Works (120 Hz VR mode, tracking, video, YouTube) |
+
+Tried it on another Mac or headset? Please add a report to the
+[compatibility issue](https://github.com/i33mr/psvr-mac/issues/1), even if it just works.
 
 ## Wiring
 
@@ -299,12 +306,15 @@ bin/psvrctl display reset    # back to the PSVR's own EDID
 
 Ideas that would fit, roughly in order of effort. Contributions are welcome; open an issue first for the bigger ones.
 
-- Remember the playback position per video, and the format (projection / layout) chosen with P / L
-- Playback speed (0.5–2×)
-- Photos (360°, VR180 and flat images)
+- [Remember the playback position per video](https://github.com/i33mr/psvr-mac/issues/2), and the format
+  (projection / layout) chosen with P / L
+- [Playback speed (0.5–2×)](https://github.com/i33mr/psvr-mac/issues/3)
+- [Photos (360°, VR180 and flat images)](https://github.com/i33mr/psvr-mac/issues/4)
 - More formats: 220° fisheye and MKV files AVFoundation can't open
-- Controls inside the headset (e.g. look down to pick the next video in a category)
-- Head tracking as input for other apps, e.g. flight simulators via opentrack
+- [Controls inside the headset](https://github.com/i33mr/psvr-mac/issues/5) (e.g. look down to pick the next video in
+  a category)
+- [Head tracking as input for other apps](https://github.com/i33mr/psvr-mac/issues/6), e.g. flight simulators via
+  opentrack
 - Position tracking with the PlayStation Camera, and PS Move controllers
 - SteamVR / OpenXR support (a large project on macOS)
 
@@ -327,6 +337,10 @@ What's different here: no PS4 needed, native on Apple Silicon, 120 Hz VR mode, Y
 and a virtual screen for any Mac window.
 
 ## Contributing
+
+Questions, ideas and VR video recommendations: [Discussions](https://github.com/i33mr/psvr-mac/discussions).
+Issues marked [good first issue](https://github.com/i33mr/psvr-mac/labels/good%20first%20issue) are small and
+self-contained.
 
 Bug reports are most useful with your Mac model, macOS version, headset model (CUH-ZVR1 or ZVR2) and the output of
 `bin/psvrctl info` and `bin/psvrctl display status`; the issue form asks for these. Pull requests: run `swift test`
